@@ -36,7 +36,7 @@ async function getWeatherData() {
     }
     return { city, countryName, temp };
   } catch (error) {
-    console.error(error.message);
+    return console.error(error.message);
   }
 }
 
