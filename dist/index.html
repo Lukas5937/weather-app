@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,5 +6,19 @@
     <title>Document</title>
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" />
+      </div>
+      <div>
+        <label for="unit">Celsius</label>
+        <input type="checkbox" id="unit" name="unit" value="celsius" />
+      </div>
+      <button id="search-button" type="submit">Search</button>
+    </form>
+    <div class="loader-wrapper"></div>
+    <div class="temperature-wrapper"></div>
+  </body>
 </html>
